@@ -1,1 +1,1 @@
-This is the Branch of AuriStark. Dannick ist the one on The Master Branch.
+This is the Branch of AuriStark. DannickStark ist the one on The Master Branch.
