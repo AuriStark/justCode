@@ -8,8 +8,9 @@
     <meta name="description" content="wir bieten werkstudent an.">
 
     <link rel="icon" href="img/icon-img.png" type="image/png">
-    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>JustCodeKL</title>
 
@@ -29,7 +30,9 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Menu</a>
+        <a class="navbar-brand" href="#">
+            <i class="fa fa-code text-primary"></i> JustCodeKL
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,17 +40,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#paragraphe1">para1 <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Abbout</a>
+                <a class="nav-link" href="#paragraphe2">para2</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModalCenter">go to Modal</a>
                 <a class="dropdown-item" href="#">Another action</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a>
@@ -64,11 +67,12 @@
         </div>
         </nav>
    
-    <div class="container">
+    <!-- alert section 
+        <div class="container">
         <div class="alert alert-primary" role="alert">
             Nous sommes JustCodeKL et je suis AuriStark.
         </div>
-    </div>
+    </div>-->
     
     <div id="demojustcode" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -122,7 +126,7 @@
         </a>
     </div>
    
-    <div class="container">
+    <div class="container" id="paragrahe2">
         <!--ml-3 ml-sm-5 mr-2 mr-sm-5 mt-5 pl-2 pr-2-->
         <div class="content-inner mt-5">
             <p>
@@ -137,42 +141,8 @@
         </div>
     </div>
 
-    <div id="Section">
-       <div class="container">
-            <!-- Button trigger modal -->
-            <div class="text-center mt-5">
-                <button type="button" class="btn btn-warning " data-toggle="modal" data-target="#exampleModalCenter">
-                    Launch demo modal
-                </button>
-            </div>
-  
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p>
-                                This is a Notification from The Modal of Bootstrap.
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-success">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-       </div> 
-    </div>
-
     <div class="container mt-5 ">
-        <div class="row">
+        <div class="row" id="paragraphe2">
             <div class="col-lg-8 col-sm-12 mt-sm-4">
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
@@ -189,12 +159,11 @@
             <div class="col-lg-4 col-sm-12 mt-sm-5">
                 <img src="img/soleil.jpg" alt="logo" class="w-100">     
             </div>
-
         </div>
     </div>
 
     <div class="container mt-lg-5 ">
-        <div class="row">
+        <div class="row" id="paragraphe3">
             <div class="col-lg-4 col-sm-12 mt-5">
                 <div id="demojustcode2" class="carousel slide carousel-fade" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -264,15 +233,87 @@
         </div>
     </div>
 
-    <footer class="col.12 mb-0 mt-5  p-2" style="background-color:gray;">
-        <div class="text-center">
+    <div id="Section">
+        <div class="container">      
+            <!-- Button trigger modal -->
+            <div class="row">
+                <div class=" row text-center mt-5">
+                    <div class="col-6">
+                        <button class="btn btn-warning" value = submit> warning button </button>
+                    </div>                       
+                    <div class="col-6">
+                        <button type="button" class="btn btn-secondary " data-toggle="modal" data-target="#exampleModalCenter">
+                            Launch demo modal
+                        </button>
+                    </div> 
+                </div>
+            </div>
+                    
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                This is a Notification from The Modal of Bootstrap.
+                                </br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Hic rerum nemo itaque autem quisquam qui 
+                                maiores pariatur recusandae ducimus! Quod corrupti itaque 
+                                iusto eligendi et laborum aliquid eius! Hic, officiis!
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+    </div>
+
+    <div class="footer row mt-5">
+        <!--<div class="text-center">
             <small>
                 <p> Copyright 2020 
-                    <i>by AuriStark </i>
+                    
                 </p>
             </small>
+        </div>-->
+
+        <div class="col-12 row  bg-primary">   
+            <!-- xs < 576  le secrans minimes-->
+            <!-- sm >= 576px : les ecrans  a partir de small et aussi grösser ( medium et large) . cependant les prorietes de md et de large peuvent etre overwriten-->
+            <!-- md >= 768px : les ecrans a partir de medium, inclus les larges et les extra large-->
+            <!-- lg >= 1200px : les laptop et desktop ( les ecrans a partir de large)  -->
+            
+            <div class="col-12 col-sm-6 col-md-3 mb-4   mb-md-0 mt-2  text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, quod eveniet ullam in illum cupiditate
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4 mb-md-0  mt-2 text-white">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet cum fugiat vel similique! Unde iure dolor quos illum porro,
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4 mb-md-0  mt-2 text-white"> 
+                <i class="icon fas fa-gift" id="simple-icon1"> 
+                    <p> get a gift</p> 
+                </i>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4 mb-md-0 mt-2 text-white">
+                <i class="icon simple-icon2 fa fa-dolly"> 
+                    <p> fast shipping </p> 
+                </i>
+            </div>
         </div>
-    </footer>
+        
+        <div class=" col-12 p-3  bg-dark text-white text-center">Copyright 2020-<i>JustCodeKL</i> </div>
+    </div>
     
     <!--Scripts-->
     <!--<script src="js/bootstrap.min.js"></script>-->

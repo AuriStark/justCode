@@ -1,0 +1,44 @@
+$icon1-color: cyan;
+$icon2-color: pink;
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+i{
+    color: green; //italic balise
+    text-transform: capitalize;
+    &.icon{
+        &#simple-icon1{
+            color: $icon1-color;
+            text-transform: upper-case;
+            font-size: 30px;
+        }
+        &.simple-icon2{
+            color: $icon2-color;
+            text-transform: uppercase;
+            font-size: 30px;
+        }      
+    }
+}
+.carousel-indicators{
+    li{
+        &.active{
+            background-color:rgb(71, 14, 85);
+         }
+    }
+}
+
+#demojustcode{
+    .carousel-indicators{
+        li{
+            &.active{
+                background-color:rgb(25, 15, 170); // la priorite revient a celui qui a le plus de selecteurs.
+             }
+        }
+    }
+}
+
+
+
